@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>종이 접기 시뮬레이터</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📄 종이 접기 시뮬레이터</h1>
+    
+    <div class="paper-container" id="paper"></div>
+    
+    <div class="buttons">
+      <button onclick="foldPaper()">접기</button>
+      <button onclick="resetSimulation()">초기화</button>
+    </div>
+
+    <p id="foldCount">접은 횟수: 0</p>
+    <p id="thickness">두께: 1 겹 (0.000100 m)</p>
+    <p id="force">필요한 힘: 약 1.00 kgf (9.81 N)</p>
+
+    <canvas id="thicknessChart" width="600" height="300"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
